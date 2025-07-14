@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Winky Rough", sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: Impact;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-style: Tahoma;
+    font-size: 30px;
+    color: #555;
+}
+
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    gap: 50px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px gray;
+
+    flex-wrap: wrap;
+}
+
+.choices button {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 8px 8px 20px gray;
+}
+
+.player-choices button {
+    cursor: pointer;
+}
+
+.choices button img {
+    width: 75%;
+    object-fit: contain;
+}
+
+.vs {
+    font-size: 40px;
+    font-family: Impact;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+} 
+
+.choices button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform:  scale(1.1) rotate(0deg) ; }
+  10% { transform:  scale(1.1) rotate(10deg); }
+  20% { transform:  scale(1.1) rotate(0deg); }
+  30% { transform:  scale(1.1) rotate(-10deg); }
+  40% { transform:  scale(1.1) rotate(0deg); }
+  50% { transform: scale(1.1) rotate(10deg); }
+  60% { transform: scale(1.1) rotate(0deg); }
+  70% { transform: scale(1.1) rotate(-10deg); }
+  80% { transform: scale(1.1) rotate(10deg); }
+  90% { transform: scale(1.1) rotate(0deg); }
+  100% { transform:  scale(1.1) rotate(-10deg); }
+}
+
+.com-choices button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    display: none;  
+    z-index: 1000;
+}
+
+.blur h2 {
+    font-size: 60px;
+    font-weight: 900;   
+}
+
+.reset {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
