@@ -5,28 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <div class="score">
-        <p class="player-score">Player Score:</p>
-        <p class="com-score">Computer Score:</p>
+
+    <div class="content">
+        <div class="game-info">
+            <p class="result">Make your choice!</p>
+            <p class="round">Round: 1</p>
+            <p class="player-score">Player Score: 0</p>
+            <p class="com-score">Computer Score: 0</p>
+            <p class="game-over"></p>
+            <button class="reset">Reset</button>
+        </div>
+
+        <div class="game">
+            <div class="choices plyer-choices">
+                <button id="rock" ><img src="images/rock.png"></button>
+                <button id="paper"><img src="./images/paper.png"></button>
+                <button id="scissors"><img src="./images/scissor.png"></button>
+            </div>
+
+            <div class="vs">VS</div>    
+
+            <div class="choices com-choices">
+                <button> Make a choice </button> 
+            </div>
+        </div>
     </div>
 
-    <div class="plsyer-choices">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+    <div class="blur" id="blur">
+            <h2></h2>
+            <button class="reset">Reset</button>
     </div>
 
-    <div>VS</div>
-
-    <div class="com-choices">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-    </div>
-    
     <script src="./script.js"></script>
 </body>
 </html>
